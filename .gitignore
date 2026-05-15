@@ -6,6 +6,7 @@ __pycache__/
 
 # Veri (Verileri GitHub'a atmıyoruz, boyutu çok büyük olur)
 data/*
+src/*
 
 
 # Eğitilmiş Modeller (Ağır dosyalar)
