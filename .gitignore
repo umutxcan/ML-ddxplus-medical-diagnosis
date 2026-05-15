@@ -1,0 +1,18 @@
+# Python & Sanal Ortam
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Veri (Verileri GitHub'a atmıyoruz, boyutu çok büyük olur)
+data/*
+
+
+# Eğitilmiş Modeller (Ağır dosyalar)
+models/**/*.pkl
+
+# Çıktılar, Figürler ve Raporlar (Kodla yeniden üretilebilir oldukları için)
+figures/*.png
+results/*.csv
+reports/*.pdf
+reports/*.pptx
