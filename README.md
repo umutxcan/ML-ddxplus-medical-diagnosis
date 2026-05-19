@@ -28,6 +28,12 @@ The following machine learning models were implemented and evaluated:
 
 ```text
 .
+├── figures/
+│   ├── logistic_regression_confusion_matrix.png
+│   ├── random_forest_confusion_matrix.png
+│   ├── xgboost_confusion_matrix.png
+│   └── xgboost_feature_importance.png
+│
 ├── notebooks/
 │   ├── 01_Logistic_Regression.ipynb
 │   ├── 02_Random_Forest.ipynb
@@ -108,25 +114,17 @@ The models were evaluated using:
 
 # Results
 
-| Model | Accuracy | F1 Score | MCC |
-|---|---|---|---|
-| Logistic Regression | 0.9972 | 0.9972 | 0.9971 |
-| XGBoost | 0.9971 | 0.9971 | 0.9970 |
-| Random Forest | Pending | Pending | Pending |
+| Model | Accuracy | Precision | Recall | F1 Score | MCC |
+|---|---|---|---|---|---|
+| Logistic Regression | 0.9972 | 0.9974 | 0.9972 | 0.9972 | 0.9971 |
+| Random Forest | 0.9968 | 0.9971 | 0.9968 | 0.9967 | 0.9967 |
+| XGBoost | 0.9971 | 0.9973 | 0.9971 | 0.9971 | 0.9970 |
 
 The extremely high classification performance is largely influenced by the synthetic and highly structured nature of the DDXPlus dataset.
 
 ---
 
 # Example Visualizations
-
-## XGBoost Feature Importance
-
-The graph below shows the most influential symptom evidence features used by the XGBoost model during disease prediction.
-
-![XGBoost Feature Importance](figures/xgboost_feature_importance.png)
-
----
 
 ## Logistic Regression Confusion Matrix
 
@@ -136,11 +134,27 @@ The confusion matrix demonstrates the strong multiclass classification performan
 
 ---
 
+## Random Forest Confusion Matrix
+
+The confusion matrix below illustrates the multiclass disease classification performance of the Random Forest model.
+
+![Random Forest Confusion Matrix](figures/random_forest_confusion_matrix.png)
+
+---
+
 ## XGBoost Confusion Matrix
 
 The confusion matrix for XGBoost highlights the model's ability to accurately classify disease categories.
 
 ![XGBoost Confusion Matrix](figures/xgboost_confusion_matrix.png)
+
+---
+
+## XGBoost Feature Importance
+
+The graph below shows the most influential symptom evidence features used by the XGBoost model during disease prediction.
+
+![XGBoost Feature Importance](figures/xgboost_feature_importance.png)
 
 ---
 
@@ -189,7 +203,9 @@ Each notebook includes:
 # Contributors
 
 - Timur Öncü
-- Team Members
+- Umut Can
+- Mete Menteşe
+- Buse Küçüksarı
 
 ---
 
